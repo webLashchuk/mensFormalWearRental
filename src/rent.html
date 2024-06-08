@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Rent"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+
+    <include src="./html/_header.html" locals='{"page": "rent", "class": ""}'></include>
+
+    <main class="main">
+
+      <include src="./html/_hero.html">
+        {
+        "image": "rent/hero.jpg",
+        "subTitle":"Our Rental Process",
+        "title":"Simple Steps to Renting Your Ideal Suit"
+        }
+      </include>
+
+      <include src="./html/_about.html">
+        {
+        "classLink":"hidden",
+        "classBtn":""
+        }
+      </include>
+
+      <include src="./html/rent/_faq.html"></include>
+
+      <include src="./html/_contact.html"></include>
+
+    </main>
+
+    <include src="./html/_footer.html"></include>
+  </div>
+
+</body>
+
+</html>

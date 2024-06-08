@@ -1,0 +1,46 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --content-width: 1200px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // font-family
+  --font-family-primary: "Plus Jakarta Sans", sans-serif;
+
+  // font-weight
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+
+
+  // color
+  --color-white: #fff;
+
+  --color-gray-100: #fafafa;
+  --color-gray-200: #f8f8f8;
+
+  --color-brown-200: #e7dfdc;
+  --color-brown-300: #c4b0a8;
+  --color-brown-500: #7e5342;
+  --color-brown-900: #381c12;
+
+  //filter
+  --brown-300: invert(80%) sepia(14%) saturate(279%) hue-rotate(332deg) brightness(89%) contrast(89%);
+  --brown-500: invert(34%) sepia(26%) saturate(657%) hue-rotate(331deg) brightness(96%) contrast(96%);
+
+  --white: invert(99%) sepia(0%) saturate(0%) hue-rotate(189deg) brightness(102%) contrast(105%);
+
+  //  radius
+  --radius-main: 12px;
+
+  // gradient
+
+
+  // icons
+  --arrow: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.3 19.8845C11.1167 19.7012 11.0207 19.4679 11.012 19.1845C11.004 18.9012 11.0917 18.6679 11.275 18.4845L16.175 13.5845H5C4.71667 13.5845 4.479 13.4885 4.287 13.2965C4.09567 13.1052 4 12.8679 4 12.5845C4 12.3012 4.09567 12.0635 4.287 11.8715C4.479 11.6802 4.71667 11.5845 5 11.5845H16.175L11.275 6.68452C11.0917 6.50119 11.004 6.26785 11.012 5.98452C11.0207 5.70119 11.1167 5.46785 11.3 5.28452C11.4833 5.10119 11.7167 5.00952 12 5.00952C12.2833 5.00952 12.5167 5.10119 12.7 5.28452L19.3 11.8845C19.4 11.9679 19.471 12.0719 19.513 12.1965C19.5543 12.3219 19.575 12.4512 19.575 12.5845C19.575 12.7179 19.5543 12.8429 19.513 12.9595C19.471 13.0762 19.4 13.1845 19.3 13.2845L12.7 19.8845C12.5167 20.0679 12.2833 20.1595 12 20.1595C11.7167 20.1595 11.4833 20.0679 11.3 19.8845Z" fill="%23000000"/></svg>');
+
+  --shape: url('data:image/svg+xml,<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg"><path d="M0.5,0 C0.65,0 0.8,0.1 0.9,0.3 C1,0.55 1,0.75 0.9,0.9 C0.8,1 0.65,1 0.5,1 C0.35,1 0.2,0.9 0.1,0.75 C0,0.55 0,0.35 0.1,0.1 C0.2,0 0.35,0 0.5,0 Z" fill="%23000000"/></svg> ');
+}

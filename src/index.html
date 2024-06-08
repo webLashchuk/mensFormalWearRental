@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Home"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+
+    <include src="./html/_header.html" locals='{"page": "home", "class": ""}'></include>
+
+    <main class="main">
+
+      <include src="./html/_hero.html">
+        {
+        "image": "home/hero.jpg",
+        "subTitle":"Discover the Perfect Suit for Any Occasion",
+        "title":"Transform Your Look with MensFormalWear Rental"
+        }
+      </include>
+
+      <include src="./html/home/_features.html"></include>
+
+      <include src="./html/_about.html">
+        {
+        "classLink":"",
+        "classBtn":"hidden"
+        }
+      </include>
+
+      <include src="./html/home/_testimonials.html"></include>
+
+      <include src="./html/_tips.html"></include>
+
+      <include src="./html/_contact.html"></include>
+
+    </main>
+
+    <include src="./html/_footer.html"></include>
+  </div>
+
+</body>
+
+</html>

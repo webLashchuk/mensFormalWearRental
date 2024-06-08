@@ -1,0 +1,112 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins"as*;
+
+html,
+body {
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+}
+
+.page {
+  font-family: var(--font-family-primary);
+  font-weight: var(--fw-400);
+  font-style: normal;
+  font-size: 16px;
+  color: var(--color-brown-500);
+  background-color: var(--color-white);
+  font-optical-sizing: auto;
+  font-variant-numeric: lining-nums;
+
+  &__body {
+    min-width: 320px;
+    min-height: var(--vh);
+  }
+
+  &.open {
+    overflow: hidden;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+  width: 100%;
+}
+
+.site-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr auto;
+  min-height: var(--vh);
+}
+
+.logo {
+  max-width: 280px;
+  width: 100%;
+  filter: var(--brown-500);
+  margin-right: 25px;
+  transition: filter .2s;
+
+  @include media(tablet) {
+    max-width: 250px;
+    margin-right: 0;
+  }
+
+  @include media(mobile-m) {
+    max-width: 180px;
+  }
+
+  &:hover {
+    filter: var(--brown-300);
+
+    @include media(tablet) {
+      filter: var(--brown-500);
+    }
+  }
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section {
+  padding-block: 86px;
+
+  @include media(tablet) {
+    padding-block: rem(40);
+  }
+}
+
+.main--top {
+  padding-top: 160px;
+  background-color: var(--color-yellow);
+
+  @include media(tablet) {
+    padding-top: 120px;
+  }
+}
+
+.overlay {
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    z-index: 0;
+    inset: 0;
+    background: var(--gradient);
+  }
+}
+
+.link {
+  transition: color .2s;
+
+  &:hover {
+    color: var(--color-brown-300);
+
+    @include media(tablet) {
+      color: inherit;
+    }
+  }
+}

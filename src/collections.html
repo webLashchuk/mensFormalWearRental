@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Collections"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+
+    <include src="./html/_header.html" locals='{"page": "collections", "class": ""}'></include>
+
+    <main class="main">
+
+      <include src="./html/_hero.html">
+        {
+        "image": "collections/hero.jpg",
+        "subTitle":"Explore Our Suits Collection",
+        "title":"Discover a Range of Styles for Every Occasion"
+        }
+      </include>
+
+      <include src="./html/collections/_portfolio.html"></include>
+
+      <include src="./html/collections/_steps.html"></include>
+
+      <include src="./html/_contact.html"></include>
+
+    </main>
+
+    <include src="./html/_footer.html"></include>
+  </div>
+
+</body>
+
+</html>
